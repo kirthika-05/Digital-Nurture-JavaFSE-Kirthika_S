@@ -1,0 +1,19 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #1f2937;
+  color: white;
+}
+
+.app-header nav a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.app-header nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -1,0 +1,33 @@
+.student-profile {
+  padding: 24px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.profile-details p {
+  margin: 4px 0;
+}
+
+.profile-edit label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.profile-edit input {
+  margin-left: 8px;
+  padding: 4px 8px;
+}
+
+button {
+  margin-right: 8px;
+  margin-top: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
