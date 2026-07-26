@@ -1,0 +1,41 @@
+<div class="card" (click)="goToDetails()">
+<h3>{{course.name}}</h3>
+
+<p>Code : {{course.code}}</p>
+
+<p>Credits : {{course.credits}}</p>
+
+<div [ngSwitch]="course.gradeStatus">
+
+<p
+*ngSwitchCase="'passed'"
+class="passed">
+
+Passed
+
+</p>
+
+<p
+*ngSwitchCase="'failed'"
+class="failed">
+
+Failed
+
+</p>
+
+<p
+*ngSwitchCase="'pending'"
+class="pending">
+
+Pending
+
+</p>
+<button
+  (click)="$event.stopPropagation(); toggleEnrollment()">
+
+  {{ isEnrolled() ? 'Unenroll' : 'Enroll' }}
+
+</button>
+</div>
+
+</div>

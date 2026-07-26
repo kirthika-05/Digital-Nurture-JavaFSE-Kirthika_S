@@ -1,0 +1,23 @@
+<h1>Student Profile</h1>
+
+<h2>S. Kirthika</h2>
+
+<hr>
+
+<h3>Enrolled Courses</h3>
+
+<ul>
+
+<li *ngFor="let id of enrolledCourses">
+
+Course ID: {{ id }}
+
+</li>
+
+</ul>
+
+<div *ngIf="enrolledCourses.length===0">
+
+No courses enrolled.
+
+</div>
